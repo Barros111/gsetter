@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gsetter"
+version = "0.1.1"
+description = "Generate missing Java getters and setters and avoid repetitive boilerplate"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "tree-sitter>=0.25,<0.27",
+    "tree-sitter-java==0.23.5",
+]
+
+[project.scripts]
+gsetter = "gsetter:cli"
+
+[tool.setuptools]
+py-modules = ["gsetter"]

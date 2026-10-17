@@ -1,0 +1,8 @@
+.venv/
+.tmp/
+__pycache__/
+*.pyc
+*.java.bak*
+*.egg-info/
+build/
+dist/
